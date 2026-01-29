@@ -77,7 +77,7 @@ class AuxCloudFlowHandler(ConfigFlow, domain=DOMAIN):
                 vol.Required(CONF_EMAIL, default=stored_email): str,
                 vol.Required(CONF_PASSWORD, default=stored_password): str,
                 vol.Required(CONF_REGION, default=stored_region): vol.In(
-                    ["eu", "usa", "cn"]
+                    ["eu", "usa", "cn", "rus"]
                 ),
             }
         )

@@ -54,6 +54,7 @@ SPOOF_APP_PLATFORM = "android"
 API_SERVER_URL_EU = "https://app-service-deu-f0e9ebbb.smarthomecs.de"
 API_SERVER_URL_USA = "https://app-service-usa-fd7cc04c.smarthomecs.com"
 API_SERVER_URL_CN = "https://app-service-chn-31a93883.ibroadlink.com"
+API_SERVER_URL_RUS = "https://app-service-rus-b8bbc3be.smarthomecs.com"
 
 _LOGGER = logging.getLogger(__package__)
 
@@ -82,6 +83,7 @@ class AuxCloudAPI:
             "eu": API_SERVER_URL_EU,
             "usa": API_SERVER_URL_USA,
             "cn": API_SERVER_URL_CN,
+            "rus": API_SERVER_URL_RUS,
         }.get(region, API_SERVER_URL_EU)
         self.region = region
         self.families = None
